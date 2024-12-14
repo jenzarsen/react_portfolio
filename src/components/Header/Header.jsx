@@ -6,7 +6,9 @@ function Header() {
   const location = useLocation();
 
   const isActive = (path) => {
-    return location.pathname === path ? `${styles.button} ${styles.active}` : styles.button;
+    return location.pathname === path
+      ? `${styles.button} ${styles.active}`
+      : styles.button;
   };
 
   return (
@@ -18,7 +20,19 @@ function Header() {
             Home
           </Link>
           <Link to="/about" className={isActive("/about")}>
-            About Us
+            About Me
+          </Link>
+          <Link to="/skills" className={isActive("/skills")}>
+            Skils
+          </Link>
+          <Link to="/education" className={isActive("/education")}>
+            Education
+          </Link>
+          <Link to="/projects" className={isActive("/projects")}>
+            Projects
+          </Link>
+          <Link to="/resume" className={isActive("/resume")}>
+            Resume
           </Link>
         </nav>
       </div>
