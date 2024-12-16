@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 2rem;
+  }
+
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    gap: 0.5rem;
+  }
+
+  .textName{
+    color: #fff;
+  }
+
+  
+  .textHighlight {
+    color: #64ffda;
+  }
