@@ -1,39 +1,29 @@
 import React from "react";
 import styles from "./Card.module.css";
+import CardImage from "./CardImage.jsx";
+import CardInfo from "./CardInfo.jsx";
+import CardLink from "./CardLink.jsx";
 
 function ProjectCard(props) {
   return (
     <div
       key={props.id}
-      className={`${styles.projectCard} ${styles.projectFade}`}
+      className={`${styles.card} ${styles.cardFade}`}
       style={{ animationDelay: `${props.id * 0.1}s` }}
     >
-      <div className={styles.projectImage}>
-        <img
-          src="https://utfs.io/f/LCcCDVgGE2AkQMqnZtF6sGCac8ZVfvypwhedAYzL32oEPjxK"
-          alt={props.title}
-        />
-        <div className={styles.projectLinks}>
-          <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
-            Live Demo
-          </a>
-          <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </div>
+      <CardImage className={styles.projectLinks} links={props.links} />
+      <div className={styles.projectLinks}>
+        {props.links?.map((item, index) => {
+          return (
+            <CardLink key={index} platform={item.platform} link={item.link} />
+          );
+        })}
       </div>
-
-      <div className={styles.projectInfo}>
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
-        <div className={styles.techStack}>
-          {props.tech.map((tech, i) => (
-            <span key={i} className={styles.techTag}>
-              {tech}
-            </span>
-          ))}
-        </div>
-      </div>
+      <CardInfo
+        title={props.title}
+        description={props.description}
+        tech={props.tech}
+      />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "components/Header/Header";
 import Card from "components/Card/Card.jsx";
 import styles from "./Projects.module.css";
-import projects from "./projects.js";
+import projects from "data/projects.js";
 
 function Projects() {
   return (
@@ -16,12 +16,13 @@ function Projects() {
         <div className={styles.projectsGrid}>
           {projects.map((project, index) => (
             <Card
+              key={index}
               id={index}
               title={project.title}
               description={project.description}
               image={project.image}
               tech={project.tech}
-              liveLink={project.liveLink}
+              links={project.links}
             />
           ))}
         </div>

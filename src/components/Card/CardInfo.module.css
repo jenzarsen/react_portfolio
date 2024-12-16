@@ -1,0 +1,30 @@
+.cardInfo {
+  padding: 1.5rem;
+}
+
+.cardInfo h3 {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardInfo p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.tagStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.3rem 0.8rem;
+  background: var(--color-border);
+  color: var(--color-primary);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-family: var(--font-code);
+}
