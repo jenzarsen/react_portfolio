@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.text+' '+'fade-in'}>
+      <div className={`${styles.text} fade-in`}>
         <p className={styles.textName}>Jenz Arsen <span className={styles.textHighlight}>Alabado</span></p>
         <p >Web Developer </p>
       </div>

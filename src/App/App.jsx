@@ -1,6 +1,7 @@
 import "./App.module.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "pages/Home/Home.jsx";
+import Projects from "pages/Projects/Projects.jsx";
 import NoPage from "pages/NoPage.jsx";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <div style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </div>

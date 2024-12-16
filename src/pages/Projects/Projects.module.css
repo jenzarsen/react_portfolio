@@ -1,0 +1,51 @@
+.container {
+  min-height: 100vh;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+.main {
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--color-text-primary);
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.projectsGrid {
+  max-width: 2000px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectLinks {
+    opacity: 1;
+    background: rgba(26, 26, 46, 0.8);
+  }
+}
