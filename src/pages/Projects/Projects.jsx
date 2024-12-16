@@ -14,17 +14,19 @@ function Projects() {
         </h1>
 
         <div className={styles.projectsGrid}>
-          {projects.map((project, index) => (
-            <Card
-              key={index}
-              id={index}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              tech={project.tech}
-              links={project.links}
-            />
-          ))}
+          {projects
+            .filter((x) => x.title !== '')
+            .map((project, index) => (
+              <Card
+                key={index}
+                id={index}
+                title={project.title}
+                description={project.description}
+                image={project.image}
+                tech={project.tech}
+                links={project.links}
+              />
+            ))}
         </div>
       </main>
     </div>

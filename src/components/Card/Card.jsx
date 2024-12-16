@@ -4,16 +4,16 @@ import CardImage from "./CardImage.jsx";
 import CardInfo from "./CardInfo.jsx";
 import CardLink from "./CardLink.jsx";
 
-function ProjectCard(props) {
+function Card(props) {
   return (
     <div
       key={props.id}
       className={`${styles.card} ${styles.cardFade}`}
       style={{ animationDelay: `${props.id * 0.1}s` }}
     >
-      <CardImage className={styles.projectLinks} links={props.links} />
+      <CardImage image={props.image} links={props.links} />
       <div className={styles.projectLinks}>
-        {props.links?.map((item, index) => {
+        {props.links?.filter(item => item.link !=='').map((item, index) => {
           return (
             <CardLink key={index} platform={item.platform} link={item.link} />
           );
@@ -28,4 +28,4 @@ function ProjectCard(props) {
   );
 }
 
-export default ProjectCard;
+export default Card;

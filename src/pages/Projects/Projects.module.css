@@ -30,7 +30,9 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+
+
+@media (max-width: 1800px) {
   .main {
     padding: 1rem;
   }
@@ -41,11 +43,22 @@
   }
 
   .projectsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .projectLinks {
-    opacity: 1;
-    background: rgba(26, 26, 46, 0.8);
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+@media (max-width: 1080px) {
+    .main {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .projectsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

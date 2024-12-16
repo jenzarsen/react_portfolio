@@ -5,7 +5,7 @@ function CardImage(props) {
   return (
     <div className={styles.projectImage}>
       <img
-        src="https://utfs.io/f/LCcCDVgGE2AkQMqnZtF6sGCac8ZVfvypwhedAYzL32oEPjxK"
+        src={props.image}
         alt={props.title}
       />
     </div>
