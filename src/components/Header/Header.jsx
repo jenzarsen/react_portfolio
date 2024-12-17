@@ -12,28 +12,39 @@ function Header() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const isActive = (path) => {
-    return location.pathname === path ? `${styles.navLink} ${styles.active}` : styles.navLink;
+    if (location.pathname === "/" || location.pathname === "/react_portfolio") {
+      if ("/" === path || "/react_portfolio" === path) {
+        //active
+        return `${styles.navLink} ${styles.active}`;
+      }
+    }
+
+    return location.pathname === path
+      ? `${styles.navLink} ${styles.active}`
+      : styles.navLink;
   };
 
   return (
-    <header className={`${styles.container} ${isScrolled ? styles.scrolled : ''}`}>
+    <header
+      className={`${styles.container} ${isScrolled ? styles.scrolled : ""}`}
+    >
       <Link to="/" className={styles.logo}>
         Jenz Arsen<span className={styles.logoHighlight}>Alabado</span>
       </Link>
 
-      <button 
+      <button
         className={styles.mobileMenuButton}
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
-        {isMobileMenuOpen ? '✕' : '☰'}
+        {isMobileMenuOpen ? "✕" : "☰"}
       </button>
 
-      <nav className={isMobileMenuOpen ? styles.open : ''}>
+      <nav className={isMobileMenuOpen ? styles.open : ""}>
         <Link to="/" className={isActive("/")}>
           Home
         </Link>
@@ -49,10 +60,10 @@ function Header() {
         <Link to="/contact" className={isActive("/contact")}>
           Contact
         </Link>
-        <a 
-          href="/resume.pdf" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.resumeButton}
         >
           Resume
