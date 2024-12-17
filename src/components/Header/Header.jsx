@@ -17,8 +17,8 @@ function Header() {
   }, []);
 
   const isActive = (path) => {
-    if (location.pathname === "/" || location.pathname === "/react_portfolio") {
-      if ("/" === path || "/react_portfolio" === path) {
+    if (location.pathname === "/" || location.pathname === "/react_portfolio/") {
+      if ("/" === path || "/react_portfolio/" === path) {
         //active
         return `${styles.navLink} ${styles.active}`;
       }
