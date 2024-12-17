@@ -43,9 +43,6 @@ function Header() {
         <Link to="/experience" className={isActive("/experience")}>
           Experience
         </Link>
-         <Link to="/tools" className={isActive("/tools")}>
-          Tools
-        </Link>
         <Link to="/about" className={isActive("/about")}>
           About
         </Link>

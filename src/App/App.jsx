@@ -4,6 +4,7 @@ import Home from "pages/Home/Home.jsx";
 import Projects from "pages/Projects/Projects.jsx";
 import NoPage from "pages/NoPage.jsx";
 import Experience from "pages/Experience/Experience";
+import About from "pages/About/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </div>
