@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import { Link, useLocation } from "react-router-dom";
+import pdf from 'resume.pdf';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,7 +62,7 @@ function Header() {
           Contact
         </Link>
         <a
-          href="/resume.pdf"
+          href={pdf}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.resumeButton}
