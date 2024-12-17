@@ -20,11 +20,23 @@ function Experience() {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={styles.timelineContent}>
-                <div className={styles.header}>
-                  <h3 className={styles.company}>{exp.company}</h3>
-                  <span className={styles.period}>{exp.period}</span>
+                <div className={styles.companyInfo}>
+                  <div className={styles.imageContainer}>
+                    <img
+                      src={exp.image}
+                      alt={`${exp.company} logo`}
+                      className={styles.companyImage}
+                    />
+                  </div>
+                  <div className={styles.header}>
+                    <div className={styles.headerContainer}>
+                      <h3 className={styles.company}>{exp.company}</h3>
+                      <h4 className={styles.position}>{exp.position}</h4>
+                    </div>
+                    <span className={styles.period}>{exp.period}</span>
+                  </div>
                 </div>
-                <h4 className={styles.position}>{exp.position}</h4>
+
                 <p className={styles.description}>{exp.description}</p>
 
                 <ul className={styles.responsibilities}>

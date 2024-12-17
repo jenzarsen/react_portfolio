@@ -4,6 +4,7 @@ const experiences = [
     position: "Lead Game Developer",
     period: "May 2021 - Jan 2024",
     description: "Led game development for top selling client projects",
+    image:"https://utfs.io/f/LCcCDVgGE2AkPgoksuhGMxs9uXnC8g7KdT60IqkYWN4p2EiP",
     responsibilities: [
       "Led the franchise development of All-Time Top 100 Selling games in Bigfish such as So Much Stuff & Finding America.",
       "Developed editor tools in Unity, Photoshop, and Google Sheets to expedite the overall workflow in Unity for the team.",
@@ -38,6 +39,7 @@ const experiences = [
     position: "Game Developer",
     period: "July 2019 - Aug 2020",
     description: "Game development for client projects",
+    image:"https://utfs.io/f/LCcCDVgGE2AkllMOh6TF2hLVEi9yRPpWAJnUmeXKqolfzwca",
     responsibilities: [
       "Led the development, and helped in the publishing of Hidden Object Adventure Game Escape Abduction to Google Play Store and App Store.",
       "Built a 2D Hidden Object Template in Unity, which sped up the production of new levels for 2D Hidden Object Adventure Game Escape Abduction.",
@@ -60,6 +62,7 @@ const experiences = [
     position: "Junior Game Developer",
     period: "July 2018 - July 2019",
     description: "Game development for Prison Escape Puzzle Adventure",
+    image:"https://utfs.io/f/LCcCDVgGE2Akw5nmWo1vygBtTDnIR95e6zKSaiY3kG8Ac1oX",
     responsibilities: [
       "Helped develop the best levels (Amazon, Office, Himalayas, & Mayan) in mobile game Prison Escape Puzzle using Playmaker Plugin in Unity.",
       "Created templates for minigames to be able to reuse features into different parts or levels of the game.",
