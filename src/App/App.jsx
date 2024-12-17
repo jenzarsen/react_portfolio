@@ -5,6 +5,7 @@ import Projects from "pages/Projects/Projects.jsx";
 import NoPage from "pages/NoPage.jsx";
 import Experience from "pages/Experience/Experience";
 import About from "pages/About/About";
+import Contact from "pages/Contact/Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </div>
