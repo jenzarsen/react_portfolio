@@ -14,6 +14,7 @@ function App() {
       >
         <div style={{ flex: 1 }}>
           <Routes>
+            <Route path="/react_portfolio" element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
