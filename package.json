@@ -14,7 +14,7 @@
     "predeploy": "npm run cleanBuild",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "cleanBuild": "rimraf build && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
