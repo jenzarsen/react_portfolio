@@ -11,6 +11,7 @@ function About() {
     "JIRA",
     "Github Desktop",
     "Jenkins",
+    "Firebase"
   ];
   const webSkills = [
     "JavaScript (ES6+)",
