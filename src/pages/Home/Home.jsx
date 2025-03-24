@@ -9,7 +9,7 @@ function Home() {
       <Header />
       <div className={`${styles.text} fade-in`}>
         <p className={styles.textName}>Jenz Arsen <span className={styles.textHighlight}>Alabado</span></p>
-        <p >Web Developer / Game Developer </p>
+        <p >Unity Game Developer </p>
       </div>
     </div>
   );

@@ -1,7 +1,21 @@
 const projects = [
   {
+    title: "Circle Racing",
+    description:
+      "Circle Racing is a fast-paced marble racing simulation that features colors racing one another on different exciting tracks.",
+    image: "https://s2kjszk1mr.ufs.sh/f/LCcCDVgGE2Ak7WCjKaki6ZsTjcBpzKY2uxbFa3OUnkfJIwvd",
+    tech: ["Unity", "C#", "Simulation"],
+    links: [
+      {
+        platform: "Youtube",
+        link: "https://www.youtube.com/@circleracing",
+      }
+    ],
+  },
+  {
     title: "Silverwood Bay: An Eleanor Grey Mystery",
-    description: "Mystery writer Eleanor Grey has just moved from the big city to Silverwood Bay in search of inspiration for her next novel, but it doesn’t take long for the inspiration to find her! One of the packages her friend Josie gave her contains precisely what she’s looking for – an old brooch and a romantic note that kickstarts a story she’s wanted to tell for so long.",
+    description:
+      "Mystery writer Eleanor Grey has just moved from the big city to Silverwood Bay in search of inspiration for her next novel, but it doesn’t take long for the inspiration to find her! One of the packages her friend Josie gave her contains precisely what she’s looking for – an old brooch and a romantic note that kickstarts a story she’s wanted to tell for so long.",
     image: "https://utfs.io/f/LCcCDVgGE2AklkkWfMTF2hLVEi9yRPpWAJnUmeXKqolfzwca",
     tech: ["Unity", "C#", "Casual", "Hidden Object"],
     links: [
@@ -21,7 +35,8 @@ const projects = [
   },
   {
     title: "Chimp Quest: Spirit Isle",
-    description: "Join a group of resilient monkeys on a journey to find a new home! Things go south when their boat is hit by a storm and ends up on the shores of a mysterious island.",
+    description:
+      "Join a group of resilient monkeys on a journey to find a new home! Things go south when their boat is hit by a storm and ends up on the shores of a mysterious island.",
     image: "https://utfs.io/f/LCcCDVgGE2AkYkinyV4PbBDO6qzaImjyXKEHoSUkNR97GreL",
     tech: ["Unity", "C#", "Casual", "Hidden Object"],
     links: [
@@ -41,7 +56,8 @@ const projects = [
   },
   {
     title: "So Much Stuff 4: Bits & Bobs",
-    description: "Unearth hidden treasures and charms amidst beautifully themed scenes like a '70s scrapbook, Street Art, Model Trains, Woodcarving, and more! Dive into various engaging mini-games and collect charming trinkets as you rediscover the fun of finding so much stuff! Relax, have fun, and sort through the delightful chaos of So Much Stuff 4: Bits and Bobs!",
+    description:
+      "Unearth hidden treasures and charms amidst beautifully themed scenes like a '70s scrapbook, Street Art, Model Trains, Woodcarving, and more! Dive into various engaging mini-games and collect charming trinkets as you rediscover the fun of finding so much stuff! Relax, have fun, and sort through the delightful chaos of So Much Stuff 4: Bits and Bobs!",
     image: "https://utfs.io/f/LCcCDVgGE2Ako8V2Z0uQyAB1sxetTIGq2U46W0KZRJb9djn8",
     tech: ["Unity", "C#", "Casual", "Hidden Object"],
     links: [
@@ -61,7 +77,8 @@ const projects = [
   },
   {
     title: "Just Find It 3",
-    description: "Dive into a world of differences to discover! Comb through dozens of \"find the difference\" levels for contradictions and collectibles. There are matches to make, details to distinguish, and all sorts of shapes to swap around! You can even play through a treasure trove of minigames in any order you desire! So, what are you waiting for? Test your eagle eye, enjoy, and Just Find It!",
+    description:
+      'Dive into a world of differences to discover! Comb through dozens of "find the difference" levels for contradictions and collectibles. There are matches to make, details to distinguish, and all sorts of shapes to swap around! You can even play through a treasure trove of minigames in any order you desire! So, what are you waiting for? Test your eagle eye, enjoy, and Just Find It!',
     image: "https://utfs.io/f/LCcCDVgGE2AkxyCwkHSvhoKUr5tc1PeXQL2WNbwJ3jRkVM0p",
     tech: ["Unity", "C#", "Casual", "Hidden Object"],
     links: [
@@ -81,7 +98,8 @@ const projects = [
   },
   {
     title: "Super Spooky Subgame Spectacular",
-    description: "With Super Spooky Halloween Subgames Spectacular, choose from an extensive selection of 30 distinct subgames with a spooky twist! Solve challenging crossword puzzles filled with eerie clues, piece together mesmerizing haunted jigsaw puzzles, put your word-guessing skills to the ghostly test, challenge your memory with spine-chilling challenges, unleash your creativity through eerie painting challenges, and so much more in the spirit of Halloween fun!",
+    description:
+      "With Super Spooky Halloween Subgames Spectacular, choose from an extensive selection of 30 distinct subgames with a spooky twist! Solve challenging crossword puzzles filled with eerie clues, piece together mesmerizing haunted jigsaw puzzles, put your word-guessing skills to the ghostly test, challenge your memory with spine-chilling challenges, unleash your creativity through eerie painting challenges, and so much more in the spirit of Halloween fun!",
     image: "https://utfs.io/f/LCcCDVgGE2Akp573LMtB0vjnmIC6J7ZypHDWsU3w8oc2i9Rx",
     tech: ["Unity", "C#", "Casual", "Hidden Object"],
     links: [
