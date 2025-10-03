@@ -1,7 +1,6 @@
 {
   "name": "react_portfolio",
   "version": "0.1.0",
-  "homepage": "https://jenzarsen.github.io/react_portfolio",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
