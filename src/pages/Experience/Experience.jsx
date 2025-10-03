@@ -25,6 +25,7 @@ function Experience() {
                     <img
                       src={exp.image}
                       alt={`${exp.company} logo`}
+                      loading="lazy"
                       className={styles.companyImage}
                     />
                   </div>

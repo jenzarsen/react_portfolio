@@ -37,6 +37,7 @@ function About() {
               <img
                 src="https://utfs.io/f/LCcCDVgGE2AkCCzA9j75ai3tfKbEqolPg4Qmrzw1XvS6y7eF"
                 alt="Profile"
+                loading="lazy"
                 className={styles.profileImage}
               />
               <div className={styles.imageOverlay} />
